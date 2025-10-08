@@ -249,7 +249,7 @@ class TourDateScraper:
     def run(self):
         logger.info("Starting tour date scraper...")
         self.scrape_all_tours()
-        reminders = [177, 60]
+        reminders = [60]
         for days_before in reminders:
             shows = self.get_upcoming_shows(days_before)
             if shows:
